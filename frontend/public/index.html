@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="/styles/font-awesome.min.css" rel="stylesheet" />
+  <link href="/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" />
+  <link href="/pe-icon-7-stroke/css/helper.css" rel="stylesheet" />
+  <link href="/styles/minimal-menu.css" rel="stylesheet" />
+  <link href="/styles/flat-form.css" rel="stylesheet" />
+  <link href="/styles/styles.css" rel="stylesheet" />
+  <title>Camt Store</title>
+</head>
+
+<body class="home6">
+  <div id="root">
+  </div>
+
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v10.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="page_inbox" page_id="103255258364876">
+  </div>
+
+  <script src="/scripts/libs/prefixfree.min.js"></script>
+  <script src="/scripts/libs/modernizr.js"></script>
+  <script src="/scripts/libs/jquery-1.11.2.min.js"></script>
+  <script src="/scripts/libs/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+  <script src="/scripts/libs/jquery.easing.1.3.js"></script>
+  <script src="/scripts/libs/bootstrap.min.js"></script>
+  <script src="/scripts/libs/jquery.ui.touch-punch.min.js"></script>
+  <script src="/scripts/libs/jquery.mousewheel.min.js"></script>
+  <script src="/scripts/functions.js"></script>
+</body>
+
+</html>
